@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  background-color: #FF8C00;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  margin: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  margin: 5px;
+}
+
+@media (max-width: 640px){
+  .content{
+    flex-direction: column;
+  }
+}
+nav, aside {
+  background-color: #007BFF;
+  padding: 10px;
+  flex-grow: 1; /* Permite que los elementos se expandan para ocupar todo el espacio disponible */
+}
+
+article {
+  background-color: #E0FFE0;
+  padding: 20px;
+  flex-grow: 3; /* Permite que el artículo ocupe el doble de espacio que los otros elementos */
+}
